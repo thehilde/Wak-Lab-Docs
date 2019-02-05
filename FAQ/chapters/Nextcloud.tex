@@ -1,4 +1,4 @@
-Über die URL \url{https://nc.electribez.de/index.php/login} kommt ihr zur Verwaltungskonsole auf unserem Raspi-Nextcloud Server. \\
+Über die URL \url{https://nc.wak-lab.org} kommt ihr zur Verwaltungskonsole auf unserem Nextcloud Server. \\
 \ \\
 Bitte beachtet, dass es sich um eine verschlüsselte ,,https://`` Verbindung über Port 443 handelt.\\
 
@@ -10,7 +10,7 @@ Bitte beachtet, dass es sich um eine verschlüsselte ,,https://`` Verbindung üb
 \end{minipage}
 
 \subsection{Webinterface}
-Zunächst solltet ihr euer Password ändern, welches ihr vom Admin zugewiesen bekommen habt. Falls ihr einen Script-Blocker verwendet fügt electribez.de als Ausnahme hinzu.\\
+Zunächst solltet ihr euer Password ändern, welches ihr vom Admin zugewiesen bekommen habt. Falls ihr einen Script-Blocker verwendet fügt nc.wak-lab.org als Ausnahme hinzu.\\
 Ihr könnt nun über das Webinterface auf die Dateien des Wak-Lab zugreifen.\\
  
 \begin{minipage}[t]{\textwidth}
@@ -58,11 +58,11 @@ Der Nextcloud Kalender lässt sich auch super einfach auf dem Endgerät deiner W
 \hline
 \vspace{-0.2cm}{\includegraphics[width=2cm]{pictures/ubuntu.png}} & hier passiert das ganz automatisch sobald du unter Einstellungen/Online Konten dein Nextcloud Konto verbindest.\\
 \hline
-\vspace{-0.2cm}{\includegraphics[width=2cm]{pictures/xubuntu.jpg}} & Kalender zyklisch aus dem Netzwerk zu beziehen ,,wget -N -P \textasciitilde /.local/share/orage https://*user*:*password*@nc.electribez.de/remote.php/dav/calendars/*user*/wak-lab\_shared\_by\_Max?remote`` In Orage trägt man den Pfad \textasciitilde /.local/share/orage/wak-lab\_shared\_by\_Max?remote unter ,,Datei -> Tauschdaten -> Fremddateien`` ein.\\
+\vspace{-0.2cm}{\includegraphics[width=2cm]{pictures/xubuntu.jpg}} & Kalender zyklisch aus dem Netzwerk zu beziehen ,,wget -N -P \textasciitilde /.local/share/orage https://*user*:*password*@nc.wak-lab.org/remote.php/dav/calendars/*user*/wak-lab\_shared\_by\_Max?remote`` In Orage trägt man den Pfad \textasciitilde /.local/share/orage/wak-lab\_shared\_by\_Max?remote unter ,,Datei -> Tauschdaten -> Fremddateien`` ein.\\
 \hline
-\vspace{-0.2cm}{\includegraphics[width=2cm]{pictures/android.png}} & URL: \url{https://nc.electribez.de/remote.php/dav/} Ich glaube hier wird Zusatzsoftware benötigt. Caldroid zum Beispiel. Damit habe ich allerdings keine Erfahrung. Vielleicht findet sich da noch jemand, der eine Kurzanleitung schreibt.\\
+\vspace{-0.2cm}{\includegraphics[width=2cm]{pictures/android.png}} & URL: \url{https://nc.wak-lab.org/remote.php/dav/} Ich glaube hier wird Zusatzsoftware benötigt. Caldroid zum Beispiel. Damit habe ich allerdings keine Erfahrung. Vielleicht findet sich da noch jemand, der eine Kurzanleitung schreibt.\\
 \hline
-Apple ohne Logo weil verboten & iOS -> Einstellungen/Passwörter\&Accounts  -> Konto hinzufügen -> weitere -> caldav URL: \url{https://nc.electribez.de/remote.php/dav/principals/users/,,dein Username``/}\\
+Apple ohne Logo weil verboten & iOS -> Einstellungen/Passwörter\&Accounts  -> Konto hinzufügen -> weitere -> caldav URL: \url{https://nc.wak-lab.org/remote.php/dav/principals/users/,,dein Username``/}\\
 \hline
 \end{tabular}
 \captionof{table}{Nexcloud Kalender - Client}
