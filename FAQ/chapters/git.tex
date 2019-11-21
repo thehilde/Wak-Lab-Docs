@@ -27,13 +27,17 @@ Folgende Dateitypen sind Textbasiert und können prima verwaltet werden.
 \begin{itemize}
 \item Arduino .ino Dateien
 \item Quelltexte z.B. .c .cpp .h .pas .vhdl
-\item Natürlich .html .php
+\item Projektdateien von IDEs wie Eclipse und co.
+\item Natürlich .html .php .xml .txt
 \item Windows .ini Dateien
 \item Eagle Layout Dateien und Bibliotheken ab Version 6
 \item STM Cube32 Dateien
 \item \LaTeX .tex Dateien
 \item Auch Word ist Prima integriert in Tortoise SVN und öffnet den Word eigenen DIF Viewer.
 \end{itemize}
+
+\subsection{Beispiel}
+\url{https://www.strato.de/faq/cloud-speicher/wie-verwende-ich-das-git-repository-meines-strato-hidrives/}
 
 
 \subsection{Ein Git Beispiel}
@@ -184,7 +188,16 @@ Wie man jetzt auf Github sehen kann, ist alles auf Github gelandet, was wir loka
   \captionof{figure}{Master Branch auf GitHub}
   \label{img:GithubMaster}
   \end{minipage}  
+\subsection{Fetch}
+You need to add the original repository (the one that you forked) as a remote.
+\begin{verbatim}
+    git remote add github (clone url for the orignal repository)
+\end{verbatim}
+Then you need to bring in the changes to your local repository
+\begin{verbatim}
+    git fetch github
+\end{verbatim}
 
-
+Now you will have all the branches of the original repository in your local one. For example, the master branch will be github/master. With these branches you can do what you will. Merge them into your branches etc\\
 
 
